@@ -117,8 +117,8 @@ REQU_HANDLER = DisableAbleCommandHandler ("request", req)
 REQ_HANDLER = DisableAbleMessageHandler(Filters.regex(r"^#[^\s]+"), req, friendly="request")
 SET_HANDLER = DisableAbleCommandHandler("setreq", setreq)
  
-dispatcher.add_handler(REQU_HANDLER, NOTIF_GROUP)
+#dispatcher.add_handler(REQU_HANDLER, NOTIF_GROUP)
 dispatcher.add_handler(SET_HANDLER)
-dispatcher.add_handler(REQ_HANDLER, NOTIF_GROUP)
+#dispatcher.add_handler(REQ_HANDLER, NOTIF_GROUP)
             
           
